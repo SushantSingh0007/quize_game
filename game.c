@@ -7,7 +7,7 @@ char response;
 char name[100];
 char want;
 
-
+do {
  int i;
    printf("\nREGISTER YOUR NAME: ");
    gets(name);
@@ -45,7 +45,7 @@ printf("------------------------------------------------------------------------
 printf("                                        INSTRUCTION                                      \n\n");
 printf("********************************************************************************************\n");
 printf("---------------------------------------------------------------------------------------------\n");
-printf("  -->  WELCOME %s , THERE ARE 10 QUESTION EACH QUESTION CARRY 1 MARKS.\n  -->  FOUR OPTIONS ARE PROVIDED FOR EACH QUESTION.\n",name);
+printf("  -->  WELCOME %s , THERE ARE 5 QUESTION IN EACH CATEGORY. EACH QUESTION CARRY 2 MARKS.\n  -->  FOUR OPTIONS ARE PROVIDED FOR EACH QUESTION.\n",name);
 printf("  -->  CHOOSE YOUR ANSWER CAREAREFULLY....!!\n");
 printf("  -->  PRESS 'ENTER' TO CONTINUE...\n");
 printf("---------------------------------------------------------------------------------------------\n");
@@ -102,7 +102,7 @@ printf("------------------------------------------------------------------------
         if (a==2)
         {
             printf("CORRECT\n\n");
-            score++;
+            score = score +2;
             while(getchar() != '\n');  
         }
         else
@@ -121,7 +121,7 @@ printf("------------------------------------------------------------------------
         if (b==1)
         {
             printf("CORRECT\n\n");
-        	score++;
+        	score = score +2;
             while(getchar() != '\n'); 
 		}
         else
@@ -141,7 +141,7 @@ printf("------------------------------------------------------------------------
         if (c==2)
         {
             printf("CORRECT\n\n");
-            score++;
+            score = score +2;
             while(getchar() != '\n'); 
         }
         else
@@ -161,7 +161,7 @@ printf("------------------------------------------------------------------------
         if (d==2)
         {
             printf("CORRECT\n\n");
-            score++;
+            score = score +2;
             while(getchar() != '\n'); 
         }
         else
@@ -181,7 +181,7 @@ printf("------------------------------------------------------------------------
         if (e==4)
         {
             printf("CORRECT\n\n");
-            score++;
+            score = score +2;
             while(getchar() != '\n'); 
         }
         else
@@ -191,7 +191,13 @@ printf("------------------------------------------------------------------------
         }
         while(getchar() != '\n'); 
         system("cls");
-        displayheader();
+printf("-----------------------------------------------------------------------------------------------------\n");
+printf("                                     QUIZ GAME USING C                                              \n");
+printf("-----------------------------------------------------------------------------------------------------\n");
+
+printf("\n-----------------------------------------------------------------------------------------------------\n");
+printf("                                       SCORE BOARD                                              \n");
+printf("-----------------------------------------------------------------------------------------------------\n\n");
         printf("%s, YOUR SCORE OUT OF 10 IS : %d\n",name,score);   // DISPLAY FINAL SCORE
             }
 
@@ -241,18 +247,18 @@ printf("------------------------------------------------------------------------
 }
 
 
-                displayheader();
-                int g;
-                printf("Q1. _________________IS THE PROCESS OF FINDING ERRORS AND FIXING THEM WITHIN A PROGRAM.\n");
-                    printf("1.COMPILING.\n2.EXECUTING\n3.DEBUGGING\n4.SCANNING\n\nYOUR ANSWER : ");
-                    scanf("%d",&g);
-                    if (g==2)
-                    {
-                        printf("CORRECT\n\n");
-                        score++;
-                        while(getchar() != '\n'); 
-                    }
-                    else 
+      displayheader();
+        int g;
+        printf("Q1. _________________IS THE PROCESS OF FINDING ERRORS AND FIXING THEM WITHIN A PROGRAM.\n");
+        printf("1.COMPILING.\n2.EXECUTING\n3.DEBUGGING\n4.SCANNING\n\nYOUR ANSWER : ");
+            scanf("%d",&g);
+                if (g==2)
+                {
+                 printf("CORRECT\n\n");
+                  score = score +2;
+                while(getchar() != '\n'); 
+                 }
+                else 
                     {
                         printf("INCORRECT (correct answer is debugging)");
                         while(getchar() != '\n'); 
@@ -269,7 +275,7 @@ printf("------------------------------------------------------------------------
                       if (h==4)
                       {
                       printf("CORRECT\n\n");
-                      score++;
+                       score = score +2;
                       while(getchar() != '\n'); 
                      }
                       else
@@ -288,7 +294,7 @@ printf("------------------------------------------------------------------------
         if (i==4)
         {
             printf("CORRECT\n\n");
-            score++;
+             score = score +2;
             while(getchar() != '\n'); 
         }
         else
@@ -307,7 +313,7 @@ printf("------------------------------------------------------------------------
         if (J==3)
         {
             printf("CORRECT\n\n");
-            score++;
+            score = score +2;
             while(getchar() != '\n'); 
         }
         else
@@ -326,7 +332,7 @@ printf("------------------------------------------------------------------------
         if (k==1)
         {
             printf("CORRECT\n\n");
-            score++;
+             score = score +2;
             while(getchar() != '\n'); 
         }
         else
@@ -336,7 +342,13 @@ printf("------------------------------------------------------------------------
         }
         while(getchar() != '\n'); 
         system("cls");
-        displayheader();
+printf("-----------------------------------------------------------------------------------------------------\n");
+printf("                                     QUIZ GAME USING C                                              \n");
+printf("-----------------------------------------------------------------------------------------------------\n");
+
+printf("\n-----------------------------------------------------------------------------------------------------\n");
+printf("                                       SCORE BOARD                                              \n");
+printf("-----------------------------------------------------------------------------------------------------\n\n");
         printf("%s, YOUR SCORE OUT OF 10 IS : %d\n",name,score);
             }
 
@@ -368,7 +380,7 @@ printf("------------------------------------------------------------------------
         if (l==1)
         {
             printf("CORRECT\n\n");
-            score++;
+             score = score +2;
             while(getchar() != '\n'); 
         }
         else
@@ -387,7 +399,7 @@ printf("------------------------------------------------------------------------
         if (m==3)
         {
             printf("CORRECT\n\n");
-            score++;
+             score = score +2;
             while(getchar() != '\n'); 
         }
         else
@@ -407,7 +419,7 @@ printf("------------------------------------------------------------------------
         if (n==3)
         {
             printf("CORRECT/n/n");
-            score++;
+             score = score +2;
             while(getchar() != '\n'); 
         }
         else
@@ -427,7 +439,7 @@ printf("------------------------------------------------------------------------
         if (o==1)
         {
             printf("CORRECT\n\n");
-            score++;
+             score = score +2;
             while(getchar() != '\n'); 
         }
         else
@@ -446,7 +458,7 @@ printf("------------------------------------------------------------------------
         if (p==3)
         {
             printf("CORRECT\n\n");
-            score++;
+             score = score +2;
             while(getchar() != '\n'); 
         }
         else
@@ -456,7 +468,13 @@ printf("------------------------------------------------------------------------
         }
         while(getchar() != '\n'); 
         system("cls");
-        displayheader();
+printf("-----------------------------------------------------------------------------------------------------\n");
+printf("                                     QUIZ GAME USING C                                              \n");
+printf("-----------------------------------------------------------------------------------------------------\n");
+
+printf("\n-----------------------------------------------------------------------------------------------------\n");
+printf("                                       SCORE BOARD                                              \n");
+printf("-----------------------------------------------------------------------------------------------------\n\n");
         printf("%s, YOUR SCORE OUT OF 10 IS : %d\n",name,score);
        }
  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -487,7 +505,7 @@ printf("------------------------------------------------------------------------
     if (q==4)
     {
         printf("CORRECT\n\n");
-        score++;
+         score = score +2;
         while(getchar() != '\n'); 
     }
     else
@@ -507,7 +525,7 @@ printf("------------------------------------------------------------------------
     if (r==3)
     {
         printf("CORRECT\n\n");
-        score++;
+         score = score +2;
         while(getchar() != '\n'); 
     }
     else
@@ -527,7 +545,7 @@ printf("------------------------------------------------------------------------
     if (s==2)
     {
         printf("CORRECT\n\n");
-        score++;
+         score = score +2;
         while(getchar() != '\n'); 
     }
     else
@@ -547,7 +565,7 @@ printf("------------------------------------------------------------------------
     if (t==1)
     {
         printf("CORRECT\n\n");
-        score++;
+         score = score +2;
         while(getchar() != '\n'); 
     }
     else
@@ -566,7 +584,7 @@ printf("------------------------------------------------------------------------
     if (u==4)
     {
         printf("CORRECT\n\n");
-        score++;
+         score = score +2;
         while(getchar() != '\n'); 
     }
     else
@@ -576,8 +594,13 @@ printf("------------------------------------------------------------------------
     }
     while(getchar() != '\n'); 
     system("cls");
-        displayheader();
+printf("-----------------------------------------------------------------------------------------------------\n");
+printf("                                     QUIZ GAME USING C                                              \n");
+printf("-----------------------------------------------------------------------------------------------------\n");
 
+printf("\n-----------------------------------------------------------------------------------------------------\n");
+printf("                                       SCORE BOARD                                              \n");
+printf("-----------------------------------------------------------------------------------------------------\n\n");
 		printf("%s, YOUR SCORE OUT OF 10 IS : %d\n",name,score);   // DISPLAY FINAL SCORE
         
              }
@@ -612,7 +635,7 @@ printf("------------------------------------------------------------------------
     if (a1==2)
     {
         printf("CORRECT\n\n");
-        score++;
+         score = score +2;
         while(getchar() != '\n'); 
     }
     else
@@ -632,7 +655,7 @@ printf("------------------------------------------------------------------------
     if (w==1)
     {
         printf("CORRECT\n\n");
-        score++;
+         score = score +2;
         while(getchar() != '\n'); 
     }
     else
@@ -652,7 +675,7 @@ printf("------------------------------------------------------------------------
     if (x==3)
     {
         printf("CORRECT\n\n");
-        score++;
+         score = score +2;
         while(getchar() != '\n'); 
     }
     else
@@ -672,7 +695,7 @@ printf("------------------------------------------------------------------------
     if (y==4)
     {
         printf("CORRECT\n\n");
-        score++;
+         score = score +2;
         while(getchar() != '\n'); 
     }
     else
@@ -692,7 +715,7 @@ printf("------------------------------------------------------------------------
     if (z==2)
     {
         printf("CORRECT\n\n");
-        score++;
+         score = score +2;
         while(getchar() != '\n'); 
     }
     else
@@ -702,13 +725,21 @@ printf("------------------------------------------------------------------------
     }
     while(getchar() != '\n'); 
     system("cls");
-        displayheader();
+printf("-----------------------------------------------------------------------------------------------------\n");
+printf("                                     QUIZ GAME USING C                                              \n");
+printf("-----------------------------------------------------------------------------------------------------\n");
+
+printf("\n-----------------------------------------------------------------------------------------------------\n");
+printf("                                       SCORE BOARD                                              \n");
+printf("-----------------------------------------------------------------------------------------------------\n\n");
         printf("%s, YOUR SCORE OUT OF 10 IS : %d\n",name,score);   // DISPLAY FINAL SCORE
         }
-        
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////        
     if (diff==4)
     {
-                    void displayheader () {
+        int score = 0;
+	    int answer;
+        void displayheader () {
                 
 printf("-----------------------------------------------------------------------------------------------------\n");
 printf("                                     QUIZ GAME USING C                                              \n");
@@ -718,18 +749,489 @@ printf("\n----------------------------------------------------------------------
 printf("                         QUESTIONS MODE  < DEPARTMENT OF LEGAL STUDIES >                                              \n");
 printf("-----------------------------------------------------------------------------------------------------\n\n");
 }
+     displayheader();    
+          int a2;
+        printf("Q.1  The word 'Secular' was added in the Preamble to the Constitution of India by\n");
+            printf("1.FIRST AMENDENT ACT.\n2.SEVENTH AMENDENT ACT.\n3.FORTY-SECOND AMENDENT ACT.\n4.FORTY-FOURTH AMENDENT ACT.\n\nYOUR ANSWER : ");
+                scanf("%d",&a2);
+
+        if (a2==3)
+        {
+            printf("CORRECT\n\n");
+             score = score +2;
+            while(getchar() != '\n'); 
+        }
+        else
+        {
+            printf("INCORRECT ( CORRECT ANSWER IS : FORTY-SECOND AMENDENT ACT )\n\n");
+            while(getchar() != '\n'); 
+        }
+        while(getchar() != '\n'); 
+        system("cls");
+        displayheader();
+         int a3;
+        printf("Q.2 A Judge of the Supreme Court can be removed from his office on the ground(s) of\n");
+            printf("1.Proved misbehaviour or incapacity.\n2.Violation of the Constitution.\n3.Both (A) and (B) above.\n4.None of the above.\n\nYOUR ANSWER : ");
+                scanf("%d",&a3);
+
+        if (a3==1)
+        {
+            printf("CORRECT\n\n");
+             score = score +2;
+            while(getchar() != '\n'); 
+        }
+        else
+        {
+            printf("INCORRECT ( CORRECT ANSWER IS : Proved misbehaviour or incapacity )\n\n");
+            while(getchar() != '\n'); 
+        }
+        while(getchar() != '\n'); 
+        system("cls");
+        displayheader();
+        int a4;
+        printf("Q.3 Who used the word 'Sociology' for the first time ?\n");
+            printf("1.Auguste Comte.\n2.Herbert Spencer.\n3.Diguit.\n4.None of the above.\n\nYOUR ANSWER : ");
+                scanf("%d",&a4);
+
+        if (a4==1)
+        {
+            printf("CORRECT\n\n");
+             score = score +2;
+            while(getchar() != '\n'); 
+        }
+        else
+        {
+            printf("INCORRECT ( CORRECT ANSWER IS : Auguste Comte )\n\n");
+            while(getchar() != '\n'); 
+        }
+        while(getchar() != '\n'); 
+        system("cls");
+        displayheader();
+        int a5;
+        printf("Q.4 Which provision of the Constitution imposes a duty on the Union to ensure that the Government of every State is carrying on in accordance with the provisions of the Constitution ??\n");
+            printf("1.Article 352.\n2.Article 355.\n3.Article 356.\n4.Article 360.\n\nYOUR ANSWER : ");
+                scanf("%d",&a5);
+
+        if (a5==2)
+        {
+            printf("CORRECT\n\n");
+             score = score +2;
+            while(getchar() != '\n'); 
+        }
+        else
+        {
+            printf("INCORRECT ( CORRECT ANSWER IS : Article 355 )\n\n");
+            while(getchar() != '\n'); 
+        }
+        while(getchar() != '\n'); 
+        system("cls");
+        displayheader();
+        int a6;
+        printf("Q.5 Parliament has power to legislate with respect to a matter in the State List, provided it is in the\n");
+            printf("1.Public interest.\n2.National interest.\n3.Both (A) and (B) above.\n4.None of the above.\n\nYOUR ANSWER : ");
+                scanf("%d",&a6);
+
+        if (a6==2)
+        {
+            printf("CORRECT\n\n");
+             score = score +2;
+            while(getchar() != '\n'); 
+        }
+        else
+        {
+            printf("INCORRECT ( CORRECT ANSWER IS : National interest )\n\n");
+            while(getchar() != '\n'); 
+        }
+        while(getchar() != '\n'); 
+        system("cls");
+printf("-----------------------------------------------------------------------------------------------------\n");
+printf("                                     QUIZ GAME USING C                                              \n");
+printf("-----------------------------------------------------------------------------------------------------\n");
+
+printf("\n-----------------------------------------------------------------------------------------------------\n");
+printf("                                       SCORE BOARD                                              \n");
+printf("-----------------------------------------------------------------------------------------------------\n\n");
+        printf("%s, YOUR SCORE OUT OF 10 IS : %d\n",name,score);   // DISPLAY FINAL SCORE
+    }
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    if (diff==5)
+    {
+        int score = 0;
+	    int answer;
+        void displayheader () {
+                
+printf("-----------------------------------------------------------------------------------------------------\n");
+printf("                                     QUIZ GAME USING C                                              \n");
+printf("-----------------------------------------------------------------------------------------------------\n");
+
+printf("\n-----------------------------------------------------------------------------------------------------\n");
+printf("                QUESTIONS MODE  < DEPARTMENT OF AGRICULTURE RESEARCH (DARE) >                                              \n");
+printf("-----------------------------------------------------------------------------------------------------\n\n");
+}
+     displayheader(); 
+      int a7;
+        printf("Q.1  How does the moisture stressaffect the cell\n");
+            printf("1.Affect cell division.\n2. Affect cell expansion.\n3. Cell mortality rate is affected.\n4.No effect on cell.\n\nYOUR ANSWER : ");
+                scanf("%d",&a7);
+
+        if (a7==1)
+        {
+            printf("CORRECT\n\n");
+             score = score +2;
+            while(getchar() != '\n'); 
+        }
+        else
+        {
+            printf("INCORRECT ( CORRECT ANSWER IS : Affect cell division )\n\n");
+            while(getchar() != '\n'); 
+        }
+        while(getchar() != '\n'); 
+        system("cls");
+        displayheader();   
+        int a8;
+        printf("Q.2  How much radiation energypercentage radiating on plant isused in photosynthesis ?\n");
+            printf("1. 0-50%-210%.\n2. 0-42%-1.66%n.\n3. 0-25%-0-30%.\n4.0-16%-0-24%.\n\nYOUR ANSWER : ");
+                scanf("%d",&a8);
+
+        if (a8==2)
+        {
+            printf("CORRECT\n\n");
+             score = score +2;
+            while(getchar() != '\n'); 
+        }
+        else
+        {
+            printf("INCORRECT ( CORRECT ANSWER IS : 0-42%-1.66% )\n\n");
+            while(getchar() != '\n'); 
+        }
+        while(getchar() != '\n'); 
+        system("cls");
+        displayheader();   
+         int a9;
+        printf("Q.3  At the vegetative growth stage,flowering is stopped in food-grain crops, known as-\n");
+            printf("1. sigmoid growth curve.\n2. determinate growth.\n3. determinate growth.\n4. grand growth period.\n\nYOUR ANSWER : ");
+                scanf("%d",&a9);
+
+        if (a9==2)
+        {
+            printf("CORRECT\n\n");
+             score = score +2;
+            while(getchar() != '\n'); 
+        }
+        else
+        {
+            printf("INCORRECT ( CORRECT ANSWER IS : determinate growth )\n\n");
+            while(getchar() != '\n'); 
+        }
+        while(getchar() != '\n'); 
+        system("cls");
+        displayheader();   
+        int a10;
+        printf("Q.4 The crop with yarns of sunnhemp is prepared in-\n");
+            printf("1. 12-15 weeks.\n2. 15-17 weeks.\n3. 10-12 weeks.\n4. 8-10 weeks.\n\nYOUR ANSWER : ");
+                scanf("%d",&a10);
+
+        if (a10==1)
+        {
+            printf("CORRECT\n\n");
+             score = score +2;
+            while(getchar() != '\n'); 
+        }
+        else
+        {
+            printf("INCORRECT ( CORRECT ANSWER IS : 12-15 weeks )\n\n");
+            while(getchar() != '\n'); 
+        }
+        while(getchar() != '\n'); 
+        system("cls");
+        displayheader();
+        int a11;
+        printf("Q.5 Which is not an inorganic matterin the following \n");
+            printf("1. Magnesium.\n2. Iron.\n3. Fat.\n4. Iodine.\n\nYOUR ANSWER : ");
+                scanf("%d",&a11);
+
+        if (a11==3)
+        {
+            printf("CORRECT\n\n");
+             score = score +2;
+            while(getchar() != '\n'); 
+        }
+        else
+        {
+            printf("INCORRECT ( CORRECT ANSWER IS : fat )\n\n");
+            while(getchar() != '\n'); 
+        }
+        while(getchar() != '\n'); 
+        system("cls");
+printf("-----------------------------------------------------------------------------------------------------\n");
+printf("                                     QUIZ GAME USING C                                              \n");
+printf("-----------------------------------------------------------------------------------------------------\n");
+
+printf("\n-----------------------------------------------------------------------------------------------------\n");
+printf("                                       SCORE BOARD                                              \n");
+printf("-----------------------------------------------------------------------------------------------------\n\n");   
+        printf("%s, YOUR SCORE OUT OF 10 IS : %d\n",name,score);   // DISPLAY FINAL SCORE
+    }
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    if (diff==6)
+    {
+    int score = 0;
+	    int answer;
+        void displayheader () {
+                
+printf("-----------------------------------------------------------------------------------------------------\n");
+printf("                                     QUIZ GAME USING C                                              \n");
+printf("-----------------------------------------------------------------------------------------------------\n");
+
+printf("\n-----------------------------------------------------------------------------------------------------\n");
+printf("                QUESTIONS MODE  < FACULTY OF PHARMACEUTICAL >                                              \n");
+printf("-----------------------------------------------------------------------------------------------------\n\n");
+}
+
+
+displayheader();
+int b1;
+        printf("Q.1 Which among the following  drug formulation is required to be stored in refrigerator \n");
+            printf("1. Emulsions.\n2. Suspensions.\n3. vaccines.\n4. Non of the above.\n\nYOUR ANSWER : ");
+                scanf("%d",&b1);
+
+        if (b1==3)
+        {
+            printf("CORRECT\n\n");
+             score = score +2;
+            while(getchar() != '\n'); 
+        }
+        else
+        {
+            printf("INCORRECT ( CORRECT ANSWER IS : vaccines )\n\n");
+            while(getchar() != '\n'); 
+        }
+        while(getchar() != '\n'); 
+        system("cls");
+        displayheader();   
+        int b2;
+        printf("Q.2 Which among the following is a sterile preparation \n");
+            printf("1. Nasal drops.\n2. Effervescent granules.\n3. ophthalmic preparations.\n4. otic preparations.\n\nYOUR ANSWER : ");
+                scanf("%d",&b2);
+
+        if (b2==3)
+        {
+            printf("CORRECT\n\n");
+             score = score +2;
+            while(getchar() != '\n'); 
+        }
+        else
+        {
+            printf("INCORRECT ( CORRECT ANSWER IS : ophthalmic preparations )\n\n");
+            while(getchar() != '\n'); 
+        }
+        while(getchar() != '\n'); 
+        system("cls");
+        displayheader();   
+         int b3;
+        printf("Q.3 One tanle spoon is equivalent to \n");
+            printf("1. 10ml.\n2. 15ml.\n3. 20ml.\n4. 5ml.\n\nYOUR ANSWER : ");
+                scanf("%d",&b3);
+
+        if (b3==2)
+        {
+            printf("CORRECT\n\n");
+             score = score +2;
+            while(getchar() != '\n'); 
+        }
+        else
+        {
+            printf("INCORRECT ( CORRECT ANSWER IS : 15ml )\n\n");
+            while(getchar() != '\n'); 
+        }
+        while(getchar() != '\n'); 
+        system("cls");
+        displayheader();   
+        int b4;
+        printf("Q.4 Major chemical constituent present in the clove oil \n");
+            printf("1. fenchone.\n2. citral.\n3. AnetholC.\n4. Eugenol.\n\nYOUR ANSWER : ");
+                scanf("%d",&b4);
+
+        if (b4==4)
+        {
+            printf("CORRECT\n\n");
+             score = score +2;
+            while(getchar() != '\n'); 
+        }
+        else
+        {
+            printf("INCORRECT ( CORRECT ANSWER IS : Eugenol )\n\n");
+            while(getchar() != '\n'); 
+        }
+        while(getchar() != '\n'); 
+        system("cls");
+        displayheader();   
+         int b5;
+        printf("Q.5 In a clincal trial, coparison of efficacy of a new drug with an existing drug is done in \n");
+            printf("1. Phase I.\n2. Phase II.\n3. Phase III.\n4. Phase IV.\n\nYOUR ANSWER : ");
+                scanf("%d",&b5);
+
+        if (b5==3)
+        {
+            printf("CORRECT\n\n");
+             score = score +2;
+            while(getchar() != '\n'); 
+        }
+        else
+        {
+            printf("INCORRECT ( CORRECT ANSWER IS : Phase III )\n\n");
+            while(getchar() != '\n'); 
+        }
+        while(getchar() != '\n'); 
+        system("cls");
+printf("-----------------------------------------------------------------------------------------------------\n");
+printf("                                     QUIZ GAME USING C                                              \n");
+printf("-----------------------------------------------------------------------------------------------------\n");
+
+printf("\n-----------------------------------------------------------------------------------------------------\n");
+printf("                                       SCORE BOARD                                              \n");
+printf("-----------------------------------------------------------------------------------------------------\n\n");   
+        printf("%s, YOUR SCORE OUT OF 10 IS : %d\n",name,score);   // DISPLAY FINAL SCORE
+}
+    if (diff==7)
+    {
+        int score = 0;
+	    int answer;
+        void displayheader () {
+                
+printf("-----------------------------------------------------------------------------------------------------\n");
+printf("                                     QUIZ GAME USING C                                              \n");
+printf("-----------------------------------------------------------------------------------------------------\n");
+
+printf("\n-----------------------------------------------------------------------------------------------------\n");
+printf("                          QUESTIONS MODE  < MATHEMATICAL QUESTIONS >                                              \n");
+printf("-----------------------------------------------------------------------------------------------------\n\n");
+}
+
+
+displayheader();
+        int b6;
+        printf("Q.1  If r is the radius of the sphere, then the surface area of the sphere is given by.. \n");
+            printf("1. 4 pie r2.\n2. 2 pie r2.\n3.  pie r2.\n4. 4/3 pie r2.\n\nYOUR ANSWER : ");
+                scanf("%d",&b6);
+
+        if (b6==1)
+        {
+            printf("CORRECT\n\n");
+             score = score +2;
+            while(getchar() != '\n'); 
+        }
+        else
+        {
+            printf("INCORRECT ( CORRECT ANSWER IS : 4 π r2 )\n\n");
+            while(getchar() != '\n'); 
+        }
+        while(getchar() != '\n'); 
+        system("cls");
+        displayheader();   
+        int b7;
+        printf("Q.2 If we join two hemispheres of same radius along their bases, then we get a \n");
+            printf("1. CONE.\n2. CYLINDER.\n3.  SPHERE.\n4. CUBOID.\n\nYOUR ANSWER : ");
+                scanf("%d",&b7);
+
+        if (b7==3)
+        {
+            printf("CORRECT\n\n");
+             score = score +2;
+            while(getchar() != '\n'); 
+        }
+        else
+        {
+            printf("INCORRECT ( CORRECT ANSWER IS : SPHERE )\n\n");
+            while(getchar() != '\n'); 
+        }
+        while(getchar() != '\n'); 
+        system("cls");
+        displayheader();   
+        int b8;
+        printf("Q.3 If the mean of first n natural numbers is 3n/5, then the value of n is: \n");
+            printf("1. 3.\n2. 4.\n3. 5.\n4. 6.\n\nYOUR ANSWER : ");
+                scanf("%d",&b8);
+
+        if (b8==3)
+        {
+            printf("CORRECT\n\n");
+             score = score +2;
+            while(getchar() != '\n'); 
+        }
+        else
+        {
+            printf("INCORRECT ( CORRECT ANSWER IS : 5 )\n\nExplanation: Sum of natural numbers = n(n + 1)/2\nGiven, mean = 3n/5\nMean = sum of natural numbers/n\n3n/5 = n(n + 1)/2n\n3n/5 = (n + 1)/2\n6n = 5n + 5\nn = 5\n\n");
+            while(getchar() != '\n'); 
+        }
+        while(getchar() != '\n'); 
+        system("cls");
+        displayheader();   
+         int b9;
+        printf("Q.4 The distance between two parallel tangents of acircle of radius 4 cm is \n");
+            printf("1. 2 cm.\n2. 4 cm.\n3. 6 cm.\n4. 8 cm.\n\nYOUR ANSWER : ");
+                scanf("%d",&b9);
+
+        if (b9==4)
+        {
+            printf("CORRECT\n\n");
+             score = score +2;
+            while(getchar() != '\n'); 
+        }
+        else
+        {
+            printf("INCORRECT ( CORRECT ANSWER IS : 8 cm )\n\nExplanation: Here radius, r = 4 cm\nRequired distance,\nAB = OA + OB\n= r + r = 2r = 2x4 = 8 cm\n\n");
+            while(getchar() != '\n'); 
+        }
+        while(getchar() != '\n'); 
+        system("cls");
+        displayheader();   
+        int b10;
+        printf("Q.5 The quadratic equation has \n");
+            printf("1. two distinet real roots.\n2. two equal real roots.\n3. no real roots.\n4. more than 2 real roots.\n\nYOUR ANSWER : ");
+                scanf("%d",&b10);
+
+        if (b10==2)
+        {
+            printf("CORRECT\n\n");
+             score = score +2;
+            while(getchar() != '\n'); 
+        }
+        else
+        {
+            printf("INCORRECT ( CORRECT ANSWER IS : two equal real roots )\n\n");
+            while(getchar() != '\n'); 
+        }
+        while(getchar() != '\n'); 
+        system("cls");
+printf("-----------------------------------------------------------------------------------------------------\n");
+printf("                                     QUIZ GAME USING C                                              \n");
+printf("-----------------------------------------------------------------------------------------------------\n");
+
+printf("\n-----------------------------------------------------------------------------------------------------\n");
+printf("                                       SCORE BOARD                                              \n");
+printf("-----------------------------------------------------------------------------------------------------\n\n");   
+       printf("%s, YOUR SCORE OUT OF 10 IS : %d\n",name,score);   // DISPLAY FINAL SCORE
 
     }
-    
-        
-        
-
-
-
-            
+    else if (response != 'y' || response != 'Y')
+    {
+        printf("THANKS FOR PLAYING");
+    }
+              
 
     }
-
+     else if (response != 'y' || response != 'Y')
+    {
+        printf("Okay %s, Maybe Next Time!!...\n",name);
+        break;
+    }
+    printf("\n");
+     printf("DO YOU WANT TO PLAY AGAIN (Y/N) : ");
+     scanf("%c",&want);
+}   while (want=='y' || want=='Y');
 
         
 
