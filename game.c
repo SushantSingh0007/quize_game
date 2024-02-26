@@ -2,12 +2,39 @@
 #include <strings.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <windows.h> // For Sleep function
+
+void loadingscreen () {
+    system("COLOR f0");
+    printf("\n\n\n\n\n\n\n\n\n\n\n\t\t WELCOME TO QUIZ GAME");
+    
+    for(int i=1; i<=100; ++i) {
+        Sleep(1);
+        system("cls");
+        printf("\n\n\n\n\n\n\n\n\n\n\n\t\t\t\tWELCOME TO QUIZ GAME");
+        printf("\n\n\n\n\n\n\n\n\tQUIZ GAME DEVELOPED BY SUSHANT SINGH ");
+        printf("\n\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t\t\t\t\tLOADING %d%%", i);
+        if(i==100)
+            Sleep(10);
+            system("cls");
+    }
+   
+} 
+
 int main () {
+loadingscreen();
 char response;
 char name[100];
 char want;
 
 do {
+printf("-----------------------------------------------------------------------------------------------------\n");
+printf("                                     QUIZ GAME USING C                                                \n");
+printf("                           > BY COMPUTER SCIENCE DEPARTMENT\n");
+printf("-----------------------------------------------------------------------------------------------------\n");
+
+
+
  int i;
    printf("\nREGISTER YOUR NAME: ");
    gets(name);
@@ -27,22 +54,13 @@ do {
     #endif                
         }
 
-    printf("-----------------------------------------------------------------------------------------------------\n");
-printf("                                     QUIZ GAME USING C                                              \n");
-printf("-----------------------------------------------------------------------------------------------------\n");
-
-
-printf("\n\n-----------------------------------------------------------------------------------------------------\n");
-printf("****************************************************************************************************\n");
-printf("****************************************  WELCOME TO THE GAME  *************************************\n");
-printf("****************************************************************************************************\n");
-printf("-----------------------------------------------------------------------------------------------------\n");
 
 
             system("cls");
+
     
 
-printf("                                        INSTRUCTION                                      \n\n");
+printf("                                       INSTRUCTION                                      \n\n");
 printf("********************************************************************************************\n");
 printf("---------------------------------------------------------------------------------------------\n");
 printf("  -->  WELCOME %s , THERE ARE 5 QUESTION IN EACH CATEGORY. EACH QUESTION CARRY 2 MARKS.\n  -->  FOUR OPTIONS ARE PROVIDED FOR EACH QUESTION.\n",name);
@@ -51,18 +69,34 @@ printf("  -->  PRESS 'ENTER' TO CONTINUE...\n");
 printf("---------------------------------------------------------------------------------------------\n");
 printf("*********************************************************************************************\n");
 
-         while(getchar() != '\n');  // TO CLEAR INPUT BUFFER 
+         while(getchar() != '\n');  // TO CLEAR INPUT BUFFER
+         system("cls"); 
+printf("\n\n-----------------------------------------------------------------------------------------------------\n");
+printf("****************************************************************************************************\n");
+printf("***************************************  WELCOME TO THE GAME  *************************************\n");
+printf("****************************************************************************************************\n");
+printf("-----------------------------------------------------------------------------------------------------\n");
+
          
          //PROMT THE PLAYER IF THEY ARE READY
 		printf("\n\nARE YOU READY FOR THE QUIZ ( Y/N ) : ");
             scanf("%c",&response);
+            system("cls");
 
         if (response == 'y' || response == 'Y')
     {
+printf("-----------------------------------------------------------------------------------------------------\n");
+printf("                                     QUIZ GAME USING C                                              \n");
+printf("-----------------------------------------------------------------------------------------------------\n");
+
+printf("\n-----------------------------------------------------------------------------------------------------\n");
+printf("                                     QUESTION CATEGORY                                              \n");
+printf("-----------------------------------------------------------------------------------------------------\n\n");
+ 
         // SELECT DIFFICULTY LEVEL
     	int diff;
-    	 	printf("\n\n   # WHICH TYPE OF QUESTION WOULD YOU LIKE TO ANSWER --> \n   1.GENERAL KNOWLEDGE QUESTION\n   2.FACULTY OF SCIENCE & TECHNOLOGY .\n   3.FACULTY OF SCIENCE(ZOOLOGY).\n   4.DEPARTMENT OF LEGAL STUDIES.\n   5.DEPARTMENT OF AGRICULTURE RESEARCH (DARE)\n   6.FACULTY OF PHARMACEUTICAL\n   7.MATHEMATICAL QUESTIONS\n");
-                printf("    ENTER YOUR CHOICE : ");
+    	 	printf("\n\n  >> WHICH TYPE OF QUESTION WOULD YOU LIKE TO ANSWER --> \n\n   1> GENERAL KNOWLEDGE QUESTION\n\n   2> DEPARTMENT OF SCIENCE & TECHNOLOGY .\n\n   3> DEPARTMENT OF SCIENCE(ZOOLOGY).\n\n   4> DEPARTMENT OF LEGAL STUDIES.\n\n   5> DEPARTMENT OF AGRICULTURE RESEARCH (DARE)\n\n   6> FACULTY OF PHARMACEUTICAL\n\n   7> MATHEMATICAL QUESTIONS\n");
+                printf("\n    ENTER YOUR CHOICE : ");
     	 	        scanf("%d",&diff);
                     system("cls");
 
@@ -215,7 +249,7 @@ printf("                                     QUIZ GAME USING C                  
 printf("-----------------------------------------------------------------------------------------------------\n");
 
 printf("\n-----------------------------------------------------------------------------------------------------\n");
-printf("                                 < FACULTY OF SCIENCE & TECHNOLOGY >                                              \n");
+printf("                                 < DEPARTMENT OF SCIENCE & TECHNOLOGY >                                              \n");
 printf("-----------------------------------------------------------------------------------------------------\n\n");
 
 
@@ -225,7 +259,7 @@ printf("------------------------------------------------------------------------
             int score = 0;
 	        int answer;
             int f;
-            printf("    CHOOSE CATEGORY -->\n   1.PROGRAMMING QUESTION.\n   2.DBMS QUESTIONS\n   3.GENERAL QUESTIONS.\n");
+            printf("  >>CHOOSE CATEGORY -->\n\n   1> PROGRAMMING QUESTION.\n \n   2> DBMS QUESTIONS\n\n   3> GENERAL QUESTIONS.\n\nYOUR CHOICE: ");
             scanf("%d",&f);
             system("cls");
             if (f==1)
